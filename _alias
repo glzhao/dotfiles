@@ -1,0 +1,62 @@
+#############################################################
+# -- general settings
+#
+
+alias v='vim'
+alias vi='vim'
+alias vd='vimdiff'
+alias vt='vim -t'
+
+alias md='mkdir -p'
+alias rd='rmdir'
+alias psg='ps auxw |grep -i'
+
+alias cd-='cd -'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+alias l='ls -alF --color'
+alias la='ls -la --color'
+alias ll='ls -l --color'
+alias ls='ls  --color $LS_OPTIONS'
+alias ls-l='ls -l --color'
+alias dir='ls -l --color'
+
+alias rm='rm -iv'
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias ln='ln -iv'
+alias eject='eject -v'
+alias df='df -hT'
+alias du='du -h'
+alias info='info --vi-keys'
+alias free='free -tm'
+
+alias su='su -'
+
+alias f='find . -name'
+alias fg='find . -type f -print0 | xargs -0 -e egrep -n --color=auto'
+
+alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
+
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+#############################################################
+# -- work related 
+
+alias iosc='osc -A https://api.suse.de'
+alias oosc='osc -A https://api.opensuse.org'
+
+#############################################################
+# -- other settings 
+
+alias beep='echo -en "\007"'
+alias o='less'
+alias rehash='hash -r'
+alias unmount='echo "Error: Try the command: umount" 1>&2; false'
+alias you='if test "$EUID" = 0 ; then /sbin/yast2 online_update ; else su - -c "/sbin/yast2 online_update" ; fi'
+
