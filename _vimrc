@@ -137,7 +137,6 @@
 " Use Tab instead of % to switch among brackets/parenthesis
 nnoremap <Tab> %
 vnoremap <Tab> %
-nmap <space> /
 nnoremap ; :
 
 cabbr %% <C-R>=expand('%:p:h')<CR>
