@@ -3,6 +3,8 @@
 *~
 _vim/ropevim/src*
 _vim/ropevim/pylibs*
+_vim/view/
+_vim/.cache/
 *.swp
 *.pyc
 _emacs.d/elpa
