@@ -14,7 +14,7 @@
 [alias]
 	co = checkout
 	ci = commit -s
-	df = diff
+	di = diff
 	st = status
 	review = review 
 	b = branch
