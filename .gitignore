@@ -9,3 +9,4 @@ _vim/.cache/
 *.pyc
 _emacs.d/elpa
 _emacs.d/projectile*
+_helpers/offlineimap-helpers.pyc
