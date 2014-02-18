@@ -22,6 +22,24 @@ becomes
 
     ${HOME}/.bashrc
 
+### Install softwares 
+
+This suit configurations need the following softwares:
+
+* git, vim, screen, tmux 
+* mutt, offlineimap, msmtp, python, keyring(python module) 
+* ssh, irssi, gnupg 
+
+### Setting passord for mail client
+
+This step is mainly for offlineimap and mstp, and the parameters are based on
+the configuration files(.msmtprc and .offlineimaprc). For instance: 
+
+	$ python -c "import keyring; keyring.set_password('mstp.gmail.com', 'user', 'PASSWORD')"
+	# Test that the password is successfully stored:
+	$ python -c "import keyring; print keyring.get_password('mstp.gmail.com', 'user')"
+	PASSWORD
+
 ### Installing source files
 It's as simple as running:
 
@@ -42,11 +60,21 @@ To replace installed files with the originals:
 Note that if there was not an original version, the installed links will not be removed.
 
 ## Requirements
+### Python
+* keyring
+
+Because it save password by python module keyring, so you must install it, and set the
+password first:
+
+	$ pip install keyring
+	$ python -c "import keyring; keyring.set_password('server', 'username', 'PASSWORD')"
+	# Test that the password is successfully stored:
+	$ python -c "import keyring; print keyring.get_password('server', 'username')"
+	PASSWORD
+
 ### Shell
 * bash
 
 ### Vim
 * python
-  * pep8
-  * pyflakes
-  * rope
+  * python-mode 

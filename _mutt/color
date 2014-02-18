@@ -1,0 +1,34 @@
+# ft = conf
+# mutt UI 
+# --   --        front	    background 
+color status     cyan       default
+color indicator  white      default
+color hdrdefault blue       default
+color attachment blue       default
+color quoted     green      default
+color tree       cyan       default
+color message    white      default
+color signature  cyan       default
+color normal     default    default
+# specil mail header 
+color header     white         default          "^Subject:"
+color header     brightyellow  default          "^To:"
+color header     brightyellow  default          "^CC:"
+color header     brightyellow  default          "^BCC:"
+color header     yellow        default          "^From:"
+color header     yellow        default          "^Reply-To:"
+color header     yellow        default          "^Date:"
+color header     brightblue    brightdefault    "^X-Label:"
+# specil status
+color index      brightyellow  default          "~F"
+color index      yellow        default          "~T"
+color index      brightred     default          "~D"
+color index      brightgreen   default          "~U"
+
+#color attachment blue default
+#color error red white
+#color status white blue
+#color hdrdefault magenta default
+#color indicator brightblack brightyellow
+color indicator black cyan
+
