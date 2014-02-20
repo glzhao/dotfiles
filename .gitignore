@@ -5,6 +5,9 @@ _vim/ropevim/src*
 _vim/ropevim/pylibs*
 _vim/view/
 _vim/.cache/
+_ssh/id_rsa*
+_ssh/id_rsa.pub
+_ssh/known_hosts
 *.swp
 *.pyc
 _emacs.d/elpa
