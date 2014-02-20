@@ -1,7 +1,7 @@
 [general]
 ui = ttyui
-#accounts = work,lucienchao_at_gmail,glzhao1_at_gmail
-accounts = lucienchao_at_gmail 
+accounts = work,lucienchao_at_gmail,glzhao1_at_gmail
+#accounts = lucienchao_at_gmail,glzhao1_at_gmail
 maxsyncaccounts=3
 pythonfile=~/.helpers/offlineimap-helpers.py
 # Die after 120 seconds of nothing. Probably the connection died ...
@@ -28,12 +28,13 @@ keepalive = 60
 
 [Repository remote-work]
 type = IMAP
-remotehost = imap.novell.com
-remoteport = 143
-remoteusereval = get_username("imap.novell.com")
-remotepasseval = get_password("imap.novell.com")
+remotehost = mail.sogou-inc.com
+remoteport = 993
+remoteuser = zhaoguangliang
+#remoteusereval = get_username("mail.sogou-inc.com")
+remotepasseval = keyring.get_password('mail.sogou-inc.com', 'zhaoguangliang')
 ssl = yes
-folderfilter = lambda foldername: foldername in ['INBOX', 'Sent Items', 'Tasklist', 'Calendar']
+#folderfilter = lambda foldername: foldername in ['INBOX', 'Sent Items', 'Tasklist', 'Calendar']
 # nametrans = oimaptransfolder_acc1
 # insert your server certificate's fingerprint here if needed
 # # cert_fingerprint=1c671ac670b1fbbfddeddd3541dbcc06148061e2

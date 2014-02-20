@@ -32,6 +32,7 @@ set sendmail = "~/.mutt/msmtpqueue/msmtp-enqueue.sh -a lucienchao@gmail.com"
 # This adds the -f option when calling $sendmail to deliver the mail, forcing 
 # it to use the same address for the From: header field.
 set use_envelope_from=yes
+folder-hook $folder/inbox/work/* source ~/.mutt/work
 
 set mbox_type		= Maildir			# mailbox type
 set wait_key		= no				# shut up, mutt
