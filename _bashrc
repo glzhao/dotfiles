@@ -49,7 +49,7 @@ fi
 #
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
-export PATH=$PATH:/sbin:/usr/sbin
+export PATH=$PATH:/sbin:/usr/sbin:$HOME/.rvm/bin 
 
 test -s ~/.alias && source ~/.alias || true
 test -s ~/.git-completion.bash && source ~/.git-completion.bash || true
@@ -156,3 +156,4 @@ case $TERM in
   ;;
 
 esac
+
