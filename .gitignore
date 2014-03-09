@@ -5,6 +5,7 @@ _vim/ropevim/src*
 _vim/ropevim/pylibs*
 _vim/view/
 _vim/.cache/
+_vim/.netrwhist
 _ssh/id_rsa*
 _ssh/known_hosts
 _ssh/authorized_keys
