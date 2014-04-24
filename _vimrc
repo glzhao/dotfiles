@@ -508,7 +508,28 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 "    <Leader>N         | Jump to latest "/" or "?" backward. See N.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "--------------------------------------------------
-" => mileszs/ack.vim'
+" => vimwiki
+"--------------------------------------------------
+"FIXME
+"let g:vimwiki_list = [{'path': '~/Dropbox/blog/',
+"\ 'path_html': '~/Dropbox/blog/html/',
+"\ 'syntax': 'markdown',
+"\ 'ext': '.mkd',
+"\ 'template_path': '~/Dropbox/blog/',
+"\ 'template_default': 'template',
+"\ 'template_ext': '.html'}]
+"let g:vimwiki_camel_case = 0
+""let g:vimwiki_file_exts = 'c, cpp,  txt, h, hpp, sh, awk'
+"let g:vimwiki_ext2syntax = {'.md':'markdown','.markdown':'markdown','.mdown':'markdown','.mkd':'markdown'}
+"
+"map <F4> <Plug>Vimwiki2HTML
+"map <S-F4> <Plug>VimwikiAll2HTML
+""insert date插入日期
+"nmap <F3> a<C-R>=strftime("%Y-%m-%d %I:%M %p")<CR><Esc>
+"imap <F3> <C-R>=strftime("%Y-%m-%d %I:%M %p")<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"--------------------------------------------------
+" => mileszs/ack.vim
 "--------------------------------------------------
 if has('unix')
 	if executable('ack-grep') || executable('ack')
