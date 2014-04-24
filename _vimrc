@@ -508,7 +508,23 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 "    <Leader>N         | Jump to latest "/" or "?" backward. See N.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "--------------------------------------------------
-" => mileszs/ack.vim'
+" => vimwiki
+"--------------------------------------------------
+"<Leader>ww -- Open default wiki index file.
+"<Leader>wt -- Open default wiki index file in a new tab.
+"<Leader>ws -- Select and open wiki index file.
+"<Leader>wd -- Delete wiki file you are in.
+"<Leader>wr -- Rename wiki file you are in.
+"<Enter> -- Folow/Create wiki link
+"<Shift-Enter> -- Split and folow/create wiki link
+"<Ctrl-Enter> -- Vertical split and folow/create wiki link
+"<Backspace> -- Go back to parent(previous) wiki link
+"<Tab> -- Find next wiki link
+"<Shift-Tab> -- Find previous wiki link
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"--------------------------------------------------
+" => mileszs/ack.vim
 "--------------------------------------------------
 if has('unix')
 	if executable('ack-grep') || executable('ack')
