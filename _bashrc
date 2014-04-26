@@ -54,11 +54,6 @@ export PATH=$PATH:/sbin:/usr/sbin:$HOME/.rvm/bin
 test -s ~/.alias && source ~/.alias || true
 test -s ~/.git-completion.bash && source ~/.git-completion.bash || true
 
-#Input configuration
-#export GTK_IM_MODULE=ibus
-#export XMODIFIERS=@im=ibus
-#export QT_IM_MODULE=ibus
-
 PROMPT_COMMAND='history -a'
 
 #generate a custom colorful bash prompt
