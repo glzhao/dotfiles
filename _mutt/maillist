@@ -11,6 +11,7 @@ subscribe ceph-devel@vger.kernel.org
 subscribe ceph-users@lists.ceph.com
 subscribe ocfs2-devel@oss.oracle.com
 subscribe linux-trace-users@vger.kernel.org
+subscribe xfs@oss.sgi.com 
 
 subscribe dm-devel@redhat.com
 subscribe lvm-devel@redhat.com
